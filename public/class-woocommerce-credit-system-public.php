@@ -97,6 +97,12 @@ class Woocommerce_Credit_System_Public {
 		// display credit required.
 		add_action( 'the_download_button', array( $this, 'th_display_credit_required_to_download' ), 20, 1 );
 
+		// display credit required input field on frontend form.
+		add_action( 'upload_form_middle', array( $this, 'th_add_credit_required_field_on_frontend_form' ), 20, 1 );
+
+		// apply_filters( 'frontend_upload_post', $post, $request )
+		add_filter( 'frontend_upload_post', array( $this, 'th_save_credit_required_on_frontend_form_submission'), 999, 2 );
+
 	}
 
 	/**
@@ -832,6 +838,27 @@ class Woocommerce_Credit_System_Public {
 		$credit_required = get_post_meta($id, 'credit_required', true);
 		$credit_required = $credit_required ? $credit_required : 1;
 
-		echo '<img class="th-dollar-bill" src="'. WCS_PUBLIC_URL .'img/dollar-bill.png" height="24px" width="25px" alt="yellow-tick"> '. $credit_required .' CREDIT';
+		// echo '<img class="th-dollar-bill" src="'. WCS_PUBLIC_URL .'img/dollar-bill.png" height="24px" width="25px" alt="yellow-tick"> '. $credit_required .' <span class="th-dollar-bill">C</span>';
+		echo '<span>' . $credit_required .' <span class="th_credit_required">C</span></span>';
+	}
+
+	public function th_add_credit_required_field_on_frontend_form ( $post ) {
+
+		$credit_required = get_post_meta($post->ID, 'credit_required', true);
+		$credit_required = $credit_required ? $credit_required : 1;
+		?>
+		<p class="form-upload-title">
+			<label>Credit needed to download <span class="required">*</span></label>
+			<input type="text" name="credit_needed" class="input" size="20" value="<?php echo esc_attr($credit_required); ?>" required />
+		</p>
+		<?php
+	}
+
+	public function th_save_credit_required_on_frontend_form_submission( $post, $request ) {
+
+		$credit_needed = ! empty( $request[ 'credit_needed' ] ) ? sanitize_text_field( wp_unslash( $request[ 'credit_needed' ] ) ) : '';
+		$post['meta_input']['credit_required'] = $credit_needed;
+
+		return $post;
 	}
 }

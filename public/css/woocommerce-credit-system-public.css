@@ -651,3 +651,16 @@ img.th-dollar-bill {
     padding: 2px;
     margin: 0px 5px;
 }
+
+span.th_credit_required {
+    background-color: #ff5500;
+    color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 9px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+}
