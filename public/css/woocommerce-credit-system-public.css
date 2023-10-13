@@ -1,0 +1,653 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+/* Pricing modal */
+.credit-wrapper {
+	-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-align-items: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    gap: 24px;
+	justify-content: center;
+}
+
+.PricingCard__wrapper {
+	flex-basis: auto;
+    position: relative;
+    width: 378px;
+    max-width: unset;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    z-index: 1;
+    background: rgb(51, 51, 51);
+    border-radius: 10px;
+    border: 1px solid;
+    overflow: hidden;
+    order: 3;
+}
+
+.AssetsIconBar__wrapper {
+	width: 100%;
+    height: 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 10px 0px;
+    gap: 16px;
+    border: none;
+    margin: 0 auto;
+    background: #212121;
+}
+
+.AssetsIconBar__heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.PricingCard__cardBody {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 19.5px;
+    background: rgb(255, 255, 255);
+}
+
+.PricingCard__upperGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.HeaderGroup__group {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+svg.PricingCardSVG,
+.PlanDetails__list img {
+    vertical-align: middle;
+}
+
+.HeaderGroup__title {
+    font-size: 25px;
+    font-weight: 700;
+    -webkit-letter-spacing: 0;
+    -moz-letter-spacing: 0;
+    -ms-letter-spacing: 0;
+    letter-spacing: 0;
+    white-space: nowrap;
+    line-height: 2.5rem;
+	padding: 0;
+    margin: 0;
+}
+
+.CreditPack__wrapper {
+    width: 100%;
+}
+
+.CreditPackDetails__wrapper {
+    width: 100%;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 16px;
+}
+
+.PlanDetails__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+    -webkit-box-align: flex-start;
+    -ms-flex-align: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.PlanDetails__listItem {
+    min-height: 24px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 0.938rem;
+}
+
+.CreditPack__subWrapper {
+    min-height: 288px;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 16px;
+    -webkit-column-gap: 11px;
+    column-gap: 11px;
+    margin-top: 16px;
+}
+
+.PlanOptionItem__wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 65px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 9px 10px;
+    gap: 16px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.PlanOptionItem__radioButtonWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.Radio {
+    display: -webkit-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.w-100 {
+    width: 100%!important;
+}
+
+.Radio__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.Radio__input {
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, input {
+    overflow: visible;
+}
+
+.Radio__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    /* border: 1px solid #979797; */
+    border: 1px solid #ff5500;
+    border-radius: 100%;
+    transition: border .3s ease-out;
+}
+
+.Radio__label {
+    padding-left: 10px;
+    position: relative;
+    bottom: 1px;
+    margin-bottom: 0;
+    margin-left: 0px;
+    cursor: pointer;
+    word-break: break-word;
+}
+
+.PlanOptionItem__wrapper .Radio__label {
+    width: 100%;
+}
+
+.PlanOptionItem__particularsWrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+    -webkit-column-gap: 10px;
+    column-gap: 10px;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.PlanParticulars__wrapper {
+    width: 100%;
+    height: auto;
+}
+
+.PlanParticulars__label {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.25rem;
+    color: #212121;
+    text-transform: capitalize;
+    white-space: normal;
+}
+
+.PlanParticulars__details--credits {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.PlanParticulars__details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: baseline;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25rem;
+    color: #212121;
+}
+
+.PlanParticulars__details__creditsText {
+    font-size: 12px;
+    line-height: 1rem;
+    white-space: normal;
+}
+
+.PlanPricing__priceWrapper {
+    width: auto;
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: right;
+}
+
+.PlanPricing__pricePerUnit {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.563rem;
+    text-align: right;
+    color: #212121;
+    white-space: nowrap;
+}
+
+.PlanPricing__subscriptText {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 0.75rem;
+    color: #212121;
+    text-transform: lowercase;
+    display: inline-block;
+    max-width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin-bottom: -2px;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sub, sup {
+    position: relative;
+    font-size: .75em;
+    line-height: 0;
+    vertical-align: baseline;
+}
+
+.PlanPricing__priceGroup {
+    line-height: 1rem;
+}
+
+.PlanPricing__originalPrice {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1rem;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    color: #e91d36;
+    white-space: nowrap;
+}
+
+.PlanPricing__totalPrice {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25rem;
+    color: #212121;
+    margin-left: 4px;
+    white-space: nowrap;
+}
+
+.PlanOptionItem__wrapper--selected, .PlanOptionItem__wrapper--selected:hover {
+    background: #fff6dc;
+    /* border: 1px solid #f0ba27; */
+    border: 1px solid #ff5500;
+    cursor: default;
+}
+
+.Radio__container:hover .Radio__input:checked~.Radio__checkmark {
+    /* border: 2px solid #f4c01c; */
+    border: 2px solid #ff5500;
+}
+
+.Radio__input:checked~.Radio__checkmark {
+    /* border: 2px solid #f4c01c; */
+    border: 2px solid #ff5500;
+    transition: none;
+}
+
+.Radio__input:checked~.Radio__checkmark:after {
+    display: block;
+}
+
+.Radio__checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 2px;
+    top: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    /* background-color: #f4c01c; */
+    background-color: #ff5500;
+}
+
+.Radio__input:active~.Radio__checkmark {
+    background-color: #fff6db;
+}
+
+.Radio__container:hover .Radio__checkmark {
+    /* border: 1px solid #f4c01c; */
+    border: 1px solid #ff5500;
+}
+
+.MostPopularTag__wrapper {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-height: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -8px;
+    margin-right: 15.5px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 2px 8px 2px 9px;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 0.75rem;
+    color: #ffffff;
+    background: #e91d36;
+    border-radius: 44px;
+}
+
+.FooterGroup__wrapper {
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 20.5px;
+}
+
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+
+.FooterGroup__button {
+    min-width: 240px !important;
+    min-height: 44px !important;
+}
+
+[type=button], [type=reset], [type=submit], button {
+    -webkit-appearance: button;
+}
+
+.Button__link {
+    text-decoration: none!important;
+}
+
+
+.Button__wrapper {
+	color: #fff !important;
+    /* background-color: #ffd44d; */
+    background-color: #ff5500;
+    border: 0;
+    cursor: pointer;
+    height: 44px;
+    width: auto;
+    padding: 10px 45px;
+    line-height: 18px;
+    font-size: 12px;
+    letter-spacing: 0;
+    text-align: center;
+    border-radius: 28px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Button__wrapper:active, .Button__wrapper:hover {
+    /* background-color: #f0ba27; */
+    background-color: #c5480a;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border-radius: 0;
+}
+
+button, input {
+    overflow: visible;
+}
+
+.PricingCard__taxesMayApply {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 0.75rem;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.CreditsTextInput__input {
+    width: 50px;
+    height: 19px;
+    letter-spacing: 0px;
+    outline: none;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 4px;
+    font-weight: 400;
+    line-height: 1.063rem;
+    text-align: center;
+    color: rgb(33, 33, 33);
+	padding: 0px;
+}
+
+.CreditsTextInput__input--selected, .CreditsTextInput__input--selected:hover {
+    border: 1px solid rgb(224, 224, 224);
+    color: rgb(51, 51, 51);
+}
+
+/* Header credits */
+span.th_head_credits {
+    align-items: center;
+    display: inline-flex;
+    border: 2px solid #000;
+    padding: 5px 5px;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.remaining-credits p {
+    margin: 1rem 0;
+}
+
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+    margin: 1rem;
+}
+
+img.th-dollar-bill {
+    width: 24px;
+    padding: 2px;
+    margin: 0px 5px;
+}
